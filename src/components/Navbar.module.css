@@ -1,0 +1,14 @@
+.navbar {
+    display: flex;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.navbar a {
+    color: #fff;
+    transition: .3s
+}
+
+.navbar a:hover {
+    color: orange;
+}

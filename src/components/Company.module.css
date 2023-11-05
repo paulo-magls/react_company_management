@@ -1,0 +1,51 @@
+.company {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin: 2rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+.details div h3 {
+    border-bottom: 3px solid #ffa600;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.operations {
+    display: flex;
+    gap: 2rem;
+}
+
+.company a {
+    text-align: center;
+    background-color: #ff9100;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.company button {
+    background-color: red;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
