@@ -1,0 +1,13 @@
+.successful_page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin: auto;
+}
+
+.successful_page h2,
+.successful_page p 
+{
+    color: #fff
+}

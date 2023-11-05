@@ -11,6 +11,7 @@ import SearchPage from "./routes/SearchPage.tsx";
 import Register from "./routes/Register.tsx";
 import ErrorPage from './routes/ErrorPage.tsx';
 import EditPage from './routes/EditPage.tsx';
+import SuccessfulPage from './routes/SuccessfulPage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/detalhes/:cnpj",
         element: <EditPage />
+      },
+      {
+        path: "/pagina_de_sucesso",
+        element: <SuccessfulPage />
       }
     ]
   }

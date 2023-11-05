@@ -22,7 +22,7 @@ const Company = ({ nome_cliente, nome_empresa, cnpj, cep, endereco, numero, tele
       
           if (response.status === 200) {
             console.log('Empresa deletada com sucesso');
-            return navigate("/");
+            return navigate("/pagina_de_sucesso");
           } else {
             console.error('Erro ao deletar empresa');
           }
