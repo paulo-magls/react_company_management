@@ -112,13 +112,13 @@ const EditForm = ({ company, editCompany }: EditFormProps) => {
             <div className={classes.edit_form_container}>
                 {Object.entries(formData).map(([key, value]) => (
                     <p key={key}>
-                        <label htmlFor={key}>{key.replace('_', ' ')}:</label>
+                        <label htmlFor={key}>{key === 'endereco'? "endereço" : (key === 'numero' ? "número" : key.replace('_', ' '))}:</label>
                         <input
                             name={key}
                             type={
                                 key === 'senha' ? 'password' : (key === 'numero' ? 'number' : 'text')
                             }                                
-                            placeholder={`Digite o ${key.replace('_', ' ').toLowerCase()}`}
+                            placeholder={`Entre com ${ key === 'endereco' ? "endereço" : (key === 'numero' ? "número" : key.replace('_', ' do/a ').toLowerCase())}`}
                             required
                             value={value}
                             onChange={handleChange}
